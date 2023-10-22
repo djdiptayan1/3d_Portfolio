@@ -9,8 +9,8 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import C_lang from "./tech/C.svg";
-import python from "./tech/python.svg";
-import swift from "./tech/swift.svg";
+import python from "./tech/Python.svg";
+import swift from "./tech/Swift.svg";
 import C_plus from "./tech/C_plus.png";
 import docker from "./tech/docker.png";
 import java from "./Java.png";
