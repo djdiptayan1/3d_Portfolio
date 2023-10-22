@@ -217,7 +217,7 @@ const projects = [
     {
         name: "LingoFlow",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "LingoFlow: Your trusted English to Hindi translator, utilizing the strength of a state-of-the-art Seq2Seq model and NLP techniques.This cutting - edge solution has been meticulously crafted with privacy in mind, as showcased in our project for the Smart India Hackathon.",
         tags: [
             {
                 name: "react",
