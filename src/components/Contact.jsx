@@ -17,6 +17,7 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
+  const [formError, setFormError] = useState(""); // State to store form validation errors
 
   const handleChange = (e) => {
     const { target } = e;
@@ -30,6 +31,12 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Form validation checks
+    if (!form.name || !form.email || !form.message) {
+      setFormError("Please fill in all fields.");
+      alert("Please fill in all fields.");
+      return;
+    }
     setLoading(true);
 
     emailjs
