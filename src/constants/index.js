@@ -23,9 +23,9 @@ import {
     IITM,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
+    LingoFlow,
+    Chat,
+    Altium,
     threejs,
     SETV
 } from "../assets";
@@ -236,7 +236,7 @@ const projects = [
                 color: "blue-text-gradient",
             },
         ],
-        image: carrent,
+        image: LingoFlow,
         source_code_link: "https://github.com/djdiptayan1/Smart_India_Hackathon",
     },
     {
@@ -257,7 +257,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: jobit,
+        image: Chat,
         source_code_link: "https://github.com/djdiptayan1/Chat_Application",
     },
     {
@@ -278,7 +278,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: tripguide,
+        image: Altium,
         source_code_link: "https://github.com/djdiptayan1/Altium_microsite",
     },
 ];

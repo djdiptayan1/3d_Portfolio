@@ -31,9 +31,9 @@ import shopify from "./company/shopify.png";
 import IITM from "./company/IITM.png";
 import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import LingoFlow from "./LingoFlow.png";
+import Chat from "./Chat_app.png";
+import Altium from "./Altium.png";
 
 export {
   logo,
@@ -66,7 +66,7 @@ export {
   shopify,
   IITM,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  LingoFlow,
+  Chat,
+  Altium,
 };
