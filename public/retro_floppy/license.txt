@@ -1,0 +1,11 @@
+Model Information:
+* title:	Retro computer w/ floppy drive, keyboard
+* source:	https://sketchfab.com/3d-models/retro-computer-w-floppy-drive-keyboard-4a3fd162531d4dbe9cf00bcdfde4df01
+* author:	David Jalbert (https://sketchfab.com/davidjayindie)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Retro computer w/ floppy drive, keyboard" (https://sketchfab.com/3d-models/retro-computer-w-floppy-drive-keyboard-4a3fd162531d4dbe9cf00bcdfde4df01) by David Jalbert (https://sketchfab.com/davidjayindie) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

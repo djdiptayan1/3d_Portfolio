@@ -28,7 +28,7 @@ const Computers1 = ({ isMobile }) => {
   );
 };
 
-const Computers = ({ isMobile }) => {
+const Computers2 = ({ isMobile }) => {
   const computer = useGLTF("./Sci-Fi Computer/scene.gltf");
 
   return (
@@ -54,11 +54,42 @@ const Computers = ({ isMobile }) => {
   );
 };
 
-const getRandomComponent = () => {
-  // Generate a random number (0 or 1) to select one of the components
-  const randomIndex = Math.floor(Math.random() * 2);
-  return randomIndex === 0 ? Computers1 : Computers;
+const Computers3 = ({ isMobile }) => {
+  const computer = useGLTF("./retro_floppy/scene.gltf");
+
+  return (
+    <mesh>
+      <hemisphereLight intensity={3} groundColor="black" />
+      <pointLight intensity={5} />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.12}
+        penumbra={3}
+        intensity={3}
+        castShadow
+        shadow-mapSize={1024}
+      />
+
+      <primitive
+        object={computer.scene}
+        scale={isMobile ? [0.12, 0.12, 0.12] : [0.15, 0.15, 0.15]}
+        position={isMobile ? [-1, -3, 0] : [-1, -3.25, 0]}
+        rotation={[0, 0, 0]}
+      />
+    </mesh>
+  );
 };
+const modelComponents = [
+  { component: Computers1, cameraPosition: { position: [20, 3, 5], fov: 50 } },
+  { component: Computers2, cameraPosition: { position: [0, 20, 5], fov: 50 } },
+  { component: Computers3, cameraPosition: { position: [0, 20, 5], fov: 50 } },
+  // Add more components with their respective camera positions here
+];
+
+function getRandomModelComponent() {
+  const randomIndex = Math.floor(Math.random() * modelComponents.length);
+  return modelComponents[randomIndex];
+}
 
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -74,11 +105,8 @@ const ComputerCanvas = () => {
     };
   });
 
-  const SelectedComponent = getRandomComponent(); // Get a random component
+  const { component: SelectedComponent, cameraPosition } = getRandomModelComponent();
   // Define camera positions for Computer1 and Computer
-  const cameraPosition = SelectedComponent === Computers1
-    ? { position: [20, 3, 5], fov: 50 }
-    : { position: [0, 20, 5], fov: 50 };
 
   return (
     <Canvas
