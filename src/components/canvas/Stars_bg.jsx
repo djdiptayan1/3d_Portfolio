@@ -15,7 +15,13 @@ const Stars_bg = (props) => {
     return (
         <group rotation={[0, 0, 0.78]}>
             <Points ref={ref} positions={sphere} stride={3} frustumCulled instanced {...props}>
-                <PointMaterial color="#f272c8" size={0.002} depthWrite={false} />
+                <PointMaterial
+                    transparent
+                    color='#f272c8'
+                    size={0.002}
+                    sizeAttenuation={true}
+                    depthWrite={false}
+                />
             </Points>
         </group>
     );
