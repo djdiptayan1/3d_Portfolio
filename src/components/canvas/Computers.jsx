@@ -106,7 +106,6 @@ const ComputerCanvas = () => {
   });
 
   const { component: SelectedComponent, cameraPosition } = getRandomModelComponent();
-  // Define camera positions for Computer1 and Computer
 
   return (
     <Canvas
