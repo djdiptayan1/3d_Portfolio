@@ -22,6 +22,11 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      fontFamily: {
+        Delicious: ['Delicious Handrawn', 'cursive'],
+        Sedgwick: ['DSedgwick Ave Display', 'cursive'],
+        Poppins: ['Poppins', 'sans-serif']
+      }
     },
   },
   plugins: [],
