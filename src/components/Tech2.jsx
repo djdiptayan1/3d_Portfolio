@@ -11,7 +11,7 @@ const TechStack = () => {
     return (
         <motion.section
             variants={fadeIn("up", "", 0.1, 1)}
-            className="py-2"
+            className="py-1"
         >
             <div className="flex flex-row flex-wrap justify-center gap-10">
                 <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-10">
