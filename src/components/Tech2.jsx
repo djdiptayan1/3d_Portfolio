@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const TechStack = () => {
     return (
         <motion.section
-            variants={fadeIn("up", "spring", 0.5, 0.5)}
+            variants={fadeIn("up", "spring", 0.5, 0.25)}
             className="py-16"
         >
             <div className="flex flex-row flex-wrap justify-center gap-10">
@@ -23,11 +23,14 @@ const TechStack = () => {
                                 speed: 450,
                             }}
                         >
-                            <div className="bg-white p-4 bg-opacity-25 rounded-full h-28 w-28 shadow-lg flex items-center justify-center text-center text-white transform transition-transform hover:scale-125">
+                            <div
+                                className="bg-white p-4 bg-opacity-25 rounded-full h-28 w-28 shadow-lg flex items-center justify-center text-center text-white transform transition-transform hover:scale-125"
+                                style={{
+                                    boxShadow: "0px 0px 5px 0px rgba(0,0,0,0.75)", // Add a shadow to the perimeter of the logos
+                                }}
+                            >
                                 <img src={technology.icon} className="h-16 mx-auto" />
                             </div>
-
-
                         </Tilt>
                     ))}
                 </div>

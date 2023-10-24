@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sci-fi Computer
+* source:	https://sketchfab.com/3d-models/sci-fi-computer-71daf747a9b54b9299cc495533141eb5
+* author:	Tuuttipingu (https://sketchfab.com/Tuuttipingu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sci-fi Computer" (https://sketchfab.com/3d-models/sci-fi-computer-71daf747a9b54b9299cc495533141eb5) by Tuuttipingu (https://sketchfab.com/Tuuttipingu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
