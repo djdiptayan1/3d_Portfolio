@@ -9,7 +9,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 const TechStack = () => {
     return (
         <motion.section
-            variants={fadeIn("up", "spring", 1 * 0.5, 0.75)}
+            variants={fadeIn("up", "spring", 0.5, 0.5)}
             className="py-16"
         >
             <div className="flex flex-row flex-wrap justify-center gap-10">
