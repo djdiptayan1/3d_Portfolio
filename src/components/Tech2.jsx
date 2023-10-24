@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant, zoomIn, slideIn } from "../utils/motion";
 
 const TechStack = () => {
     return (
         <motion.section
-            variants={fadeIn("up", "spring", 0.5, 0.25)}
-            className="py-16"
+            variants={fadeIn("up", "", 0.1, 1)}
+            className="py-2"
         >
             <div className="flex flex-row flex-wrap justify-center gap-10">
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
