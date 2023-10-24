@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { fadeIn, textVariant, zoomIn, slideIn } from "../utils/motion";
+import "../Cursor.css"
 
 const TechStack = () => {
     return (
@@ -24,7 +25,7 @@ const TechStack = () => {
                             }}
                         >
                             <div
-                                className="bg-white p-4 bg-opacity-25 rounded-full h-28 w-28 shadow-lg flex items-center justify-center text-center text-white transform transition-transform hover:scale-125"
+                                className="ironman bg-white p-4 bg-opacity-25 rounded-full h-28 w-28 shadow-lg flex items-center justify-center text-center text-white transform transition-transform hover:scale-125"
                                 style={{
                                     boxShadow: "0px 0px 5px 0px rgba(0,0,0,0.75)", // Add a shadow to the perimeter of the logos
                                 }}

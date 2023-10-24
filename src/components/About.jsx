@@ -5,7 +5,7 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 import { SectionWrapper } from '../hoc'
-
+import "../Cursor.css"
 const ServiceCard = ({ index, title, icon }) => {
   return ( // Wrap the return statement in parentheses
     <Tilt className="xs:w-[250px] w-full">
@@ -33,19 +33,19 @@ const About = () => {
     <>
       <motion.div
         variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.heroHeadText}>Overview</h2>
+        <p className={`Spiderman ${styles.sectionSubText}`} > Introduction</p>
+        <h2 className={`Spiderman ${styles.heroHeadText}`}>Overview</h2>
       </motion.div >
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+        className='Spiderman mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         Greetings! I'm Diptayan, a robotics aficionado currently pursuing a Computer Science & Engineering at SRM University. My journey is a captivating blend of technology and passion. From delving deep into microcontrollers by Texas Instruments, to seamlessly implementing MQTT protocols, and creating dynamic web applications using Flask and React, I thrive in the realm of embedded systems and web development.
         <br />
         <br />
         Beyond the tech world, I'm an ardent foodie, avid gamer, and a cinema enthusiast. Join me on this exciting exploration where innovation meets creativity, all on my captivating portfolio website.
       </motion.p>
       <div
-        className='mt-20 flex flex-wrap gap-10'>
+        className='Spiderman mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

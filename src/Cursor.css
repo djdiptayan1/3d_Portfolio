@@ -1,0 +1,23 @@
+body {
+    cursor: url('./assets/Cursor/Ironman_cursor.cur'), auto;
+}
+
+a.nav-cursor {
+    cursor: url("./assets/Cursor/Infinity_Pointer.cur"), auto;
+}
+
+.captain {
+    cursor: url("./assets/Cursor/Captain_America_Cursor.cur"), auto;
+}
+
+.ironman {
+    cursor: url("./assets/Cursor/Iron_Man_Cursor.cur"), auto;
+}
+
+.StanLee {
+    cursor: url("./assets/Cursor/StanLee.cur"), auto;
+}
+
+.Spiderman {
+    cursor: url("./assets/Cursor/Spiderman_Cursor.cur"), auto;
+}
