@@ -217,7 +217,7 @@ const projects = [
     {
         name: "LingoFlow",
         description:
-            "LingoFlow: Your trusted English to Hindi translator, utilizing the strength of a state-of-the-art Seq2Seq model and NLP techniques.This cutting - edge solution has been meticulously crafted with privacy in mind, as showcased in our project for the Smart India Hackathon.",
+            "LingoFlow: Your trusted English to Hindi translator, utilizing the strength of a state-of-the-art Seq2Seq model and NLP techniques. This cutting-edge solution has been meticulously crafted with privacy in mind, as showcased in our project for the Smart India Hackathon, where we came 2nd in recognition of our innovation and expertise.",
         tags: [
             {
                 name: "react",
@@ -263,7 +263,7 @@ const projects = [
     {
         name: "Altium Workshop",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Utilizing React.js and Firebase, I developed a registration platform for the Altium Workshop. The site offered an intuitive UI, real-time data handling, enhancing their experience. With Firebase's secure authentication and scalable database, this project showcases my ability to create efficient, interactive web applications using modern technologies.",
         tags: [
             {
                 name: "Reactjs",
