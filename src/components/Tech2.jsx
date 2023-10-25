@@ -10,7 +10,7 @@ import "../Cursor.css"
 const TechStack = () => {
     return (
         <motion.section
-            variants={fadeIn("up", "", 0.1, 1)}
+            variants={fadeIn("", "", 0.1, 1)}
             className="py-1"
         >
             <div className="flex flex-row flex-wrap justify-center gap-10">
