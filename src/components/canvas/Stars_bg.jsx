@@ -29,7 +29,7 @@ const Stars_bg = (props) => {
 
 const StarsCanvas_bg = () => {
     return (
-        <div className="w-full h-full absolute inset-0 z-[-1]">
+        <div className="w-full h-full fixed top-0 z-[-10]">
             <Canvas camera={{ position: [0, 0, 1] }}>
                 <Suspense fallback={null}>
                     <Stars_bg />
@@ -41,3 +41,32 @@ const StarsCanvas_bg = () => {
 };
 
 export default StarsCanvas_bg;
+
+//FIXED STARS
+
+// import { Suspense } from "react";
+// import { Canvas } from "@react-three/fiber";
+// import { Stars } from "@react-three/drei";
+
+// const StarsCanvas_bg = () => {
+//     return (
+//         <div className="w-full h-full fixed top-0 right-0 bottom-0 left-0 z-[-10]">
+//             <Canvas camera={{ position: [0, 0, 1] }}>
+//                 <Suspense fallback={null}>
+//                     <Stars
+//                         radius={50} // Radius of the inner sphere (default=100)
+//                         depth={50}
+//                         count={1500}
+//                         factor={5}
+//                         saturation={1}
+//                         fade={true}
+//                         speed={1}
+//                     />
+//                 </Suspense>
+//             </Canvas>
+//         </div>
+//     );
+// };
+
+// export default StarsCanvas_bg;
+
