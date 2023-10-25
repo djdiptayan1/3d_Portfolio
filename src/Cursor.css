@@ -21,3 +21,7 @@ body {
 .Spiderman {
     cursor: url("./assets/Cursor/Spiderman_Cursor.cur"), auto;
 }
+
+#menu-toggle:checked+#menu {
+    display: block;
+}
