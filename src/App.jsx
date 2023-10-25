@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar2, Tech, Tech2, Works, StarsCanvas, StarsCanvas_bg } from "./components";
 import './Cursor.css';
@@ -20,6 +21,7 @@ const App = () => {
         </div>
         <StarsCanvas_bg />
       </div>
+      <Analytics />
     </BrowserRouter>
   )
 }
