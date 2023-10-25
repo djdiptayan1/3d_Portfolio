@@ -34,10 +34,10 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl shadow-md"
           />
 
-          <div className="nav-cursor absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center nav-cursor"
             >
               <img
                 src={github}
