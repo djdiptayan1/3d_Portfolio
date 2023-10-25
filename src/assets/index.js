@@ -25,6 +25,9 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
+import Arduino from "./tech/Arduino.png";
+import Photoshop from "./tech/Photoshop.png";
+import Flask from "./tech/Flask.png";
 
 import SETV from "./company/SETV.webp";
 import shopify from "./company/shopify.png";
@@ -58,6 +61,9 @@ export {
   mongodb,
   nodejs,
   reactjs,
+  Arduino,
+  Photoshop,
+  Flask,
   redux,
   tailwind,
   typescript,

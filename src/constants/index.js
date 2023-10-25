@@ -20,6 +20,9 @@ import {
     figma,
     docker,
     java,
+    Arduino,
+    Photoshop,
+    Flask,
     IITM,
     tesla,
     shopify,
@@ -128,6 +131,18 @@ const technologies = [
     {
         name: "Swift",
         icon: swift,
+    },
+    {
+        name: "Arduino",
+        icon: Arduino,
+    },
+    {
+        name: "Photoshop",
+        icon: Photoshop,
+    },
+    {
+        name: "Flask",
+        icon: Flask,
     },
 ];
 
