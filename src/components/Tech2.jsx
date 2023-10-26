@@ -14,7 +14,7 @@ const TechStack = () => {
             className="py-1"
         >
             <div className="flex flex-row flex-wrap justify-center gap-10">
-                <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-10">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
                     {technologies.map((technology) => (
                         <Tilt
                             key={technology.name}
