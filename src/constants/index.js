@@ -294,6 +294,7 @@ const projects = [
             },
         ],
         image: Altium,
+        project_demo: "https://altium.djdiptayan.in/",
         source_code_link: "https://github.com/djdiptayan1/Altium_microsite",
     },
 ];

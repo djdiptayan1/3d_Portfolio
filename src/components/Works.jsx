@@ -15,8 +15,15 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  project_demo,
   source_code_link,
 }) => {
+  const handleImageClick = () => {
+    if (project_demo) {
+      window.open(project_demo, "_blank");
+    }
+  };
+
   return (
     <motion.div variants={fadeIn("", "", index * 0.5, 0.75)}>
       <Tilt
@@ -28,16 +35,19 @@ const ProjectCard = ({
         className="bg-tertiary p-1 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl shadow-md"
-          />
+          <div className={`absolute inset-0 ${project_demo ? 'nav-cursor' : ''} z-10`}
+            onClick={handleImageClick}>
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl shadow-md"
+            />
+          </div>
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center nav-cursor"
+              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center nav-cursor z-20"
             >
               <img
                 src={github}
@@ -50,7 +60,9 @@ const ProjectCard = ({
 
         <div className="mt-5 px-2">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[16px]">{description}</p>
+          <p className="mt-2 text-secondary text-[16px]">
+            {description}
+          </p>
         </div>
 
         <div className=" p-2 mt-4 flex flex-wrap gap-2">
@@ -64,7 +76,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </motion.div >
   );
 };
 
@@ -72,18 +84,20 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`StanLee font-Delicious ${styles.sectionSubText} `}>My work</p>
+        <p className={`StanLee font-Delicious ${styles.sectionSubText} `}>
+          My work
+        </p>
         <h2 className={`StanLee ${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="StanLee mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Following projects showcases my skills and experience through
-        real-world examples of my work. Each project is briefly described with
-        links to code repositories and live demos in it. It reflects my
-        ability to solve complex problems, work with different technologies,
-        and manage projects effectively.
+        Following projects showcases my skills and experience through real-world
+        examples of my work. Each project is briefly described with links to
+        code repositories and live demos in it. It reflects my ability to solve
+        complex problems, work with different technologies, and manage projects
+        effectively.
         <span className="text-blue-400">
           &nbsp;&nbsp;&nbsp;&nbsp;
           <a
