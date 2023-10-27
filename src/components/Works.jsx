@@ -1,13 +1,14 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-
+import useSound from 'use-sound';
 import { styles } from "../styles";
 import { github, Website_Icons } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import "../Cursor.css";
+import Mouse_Click from "../assets/Mouse_Click.mp3"
 
 const ProjectCard = ({
   index,
@@ -18,6 +19,13 @@ const ProjectCard = ({
   project_demo,
   source_code_link,
 }) => {
+  // AUDIO PLAY
+  const [play] = useSound(Mouse_Click);
+
+  const Play_click = () => {
+    play();
+  };
+
   const handleImageClick = () => {
     if (project_demo) {
       window.open(project_demo, "_blank");
@@ -46,7 +54,10 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => {
+                window.open(source_code_link, "_blank");
+                Play_click();
+              }}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center nav-cursor z-20"
             >
               <img
@@ -81,6 +92,12 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  // AUDIO PLAY
+  const [play] = useSound(Mouse_Click);
+
+  const Play_click = () => {
+    play();
+  };
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -104,6 +121,7 @@ const Works = () => {
             className="nav-cursor font-bold hover:text-xl"
             href="https://github.com/djdiptayan1"
             target="_blank"
+            onClick={() => Play_click()}
           >
             {" "}
             View All Projects...
