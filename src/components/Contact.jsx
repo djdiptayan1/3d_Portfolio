@@ -122,7 +122,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name, superstar?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Sedgwick text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Delicious text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
@@ -134,7 +134,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="How can I reach you, virtually of course?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Sedgwick text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Delicious text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
@@ -146,7 +146,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Got a message in a bottle for me? I'm all ears!"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Sedgwick text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Delicious text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <button
