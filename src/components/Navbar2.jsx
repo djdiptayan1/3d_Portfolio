@@ -13,7 +13,7 @@ const BoopButton = () => {
     const [isPlaying, setIsPlaying] = useState(false);
 
     const PlayAudio = () => {
-        audio.volume = 0.35;
+        audio.volume = 0.2;
         if (isPlaying) {
             audio.pause(); // Pause the audio if it's playing
         } else {
@@ -23,7 +23,7 @@ const BoopButton = () => {
     };
     useEffect(() => {
         // Play the audio when the component is mounted (page load)
-        audio.volume = 0.35;
+        audio.volume = 0.2;
         audio.autoplay = true;
         audio.play();
         setIsPlaying(true);
