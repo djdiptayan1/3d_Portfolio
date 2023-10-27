@@ -6,7 +6,6 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import "../Cursor.css";
-import useSound from 'use-sound';
 import Mouse_Click from "../assets/Mouse_Click.mp3"
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -37,10 +36,10 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   // AUDIO PLAY
-  const [play] = useSound(Mouse_Click);
-
   const Play_click = () => {
-    play();
+    const audio = new Audio(Mouse_Click);
+    audio.volume = 0.35;
+    audio.play();
   };
   const pdfUrl = './Diptayan_Resume.pdf'; // Replace with the URL of your PDF
   return (

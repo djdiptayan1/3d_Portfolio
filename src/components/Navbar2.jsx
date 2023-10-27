@@ -1,33 +1,38 @@
-import React, { useEffect, useState, Sound } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import useSound from 'use-sound';
-import { motion, AnimatePresence } from "framer-motion";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
-import dj_orange from "../assets/DJ_orange.jpeg";
+import { menu, close } from "../assets";
 import dj_white from "../assets/DJ_white.png";
 import "../Cursor.css"
 import Inside_you from "../assets/Inside_you.mp3"
 import Mouse_Click from "../assets/Mouse_Click.mp3"
 
 const BoopButton = () => {
-    const [play, { pause }] = useSound(Inside_you);
+    const [audio] = useState(new Audio(Inside_you)); // Replace with the actual path to your audio file
     const [isPlaying, setIsPlaying] = useState(false);
 
     const PlayAudio = () => {
+        audio.volume = 0.35;
         if (isPlaying) {
-            pause();
+            audio.pause(); // Pause the audio if it's playing
         } else {
-            play();
+            audio.play(); // Play the audio if it's paused
         }
         setIsPlaying(!isPlaying);
     };
+    useEffect(() => {
+        // Play the audio when the component is mounted (page load)
+        audio.volume = 0.35;
+        audio.autoplay = true;
+        audio.play();
+        setIsPlaying(true);
+    }, []); // The empty dependency array ensures this effect runs only once on component mount
 
 
     return (
         <div>
-            <button onClick={PlayAudio} className="play-pause-button  hover:text-white nav-cursor invert">
+            <button onClick={PlayAudio} className="play-pause-button hover:text-white nav-cursor invert">
                 {isPlaying ? (
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
@@ -41,27 +46,15 @@ const BoopButton = () => {
         </div>
     );
 };
-const Click_Button = () => {
-    const [play, { pause }] = useSound(Mouse_Click);
-    const [isPlaying, setIsPlaying] = useState(false);
-
-    const Play_click = () => {
-        if (isPlaying) {
-            pause();
-        } else {
-            play();
-        }
-        setIsPlaying(!isPlaying);
-    };
-};
 
 const Navbar2 = () => {
     // AUDIO PLAY
-    const [play] = useSound(Mouse_Click);
-
     const Play_click = () => {
-        play();
+        const audio = new Audio(Mouse_Click);
+        audio.volume = 0.35;
+        audio.play();
     };
+
     const [toggle, setToggle] = useState(false);
     const [active, setActive] = useState("");
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);

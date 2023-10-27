@@ -1,7 +1,6 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import useSound from 'use-sound';
 import { styles } from "../styles";
 import { github, Website_Icons } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -20,10 +19,10 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   // AUDIO PLAY
-  const [play] = useSound(Mouse_Click);
-
   const Play_click = () => {
-    play();
+    const audio = new Audio(Mouse_Click);
+    audio.volume = 0.35;
+    audio.play();
   };
 
   const handleImageClick = () => {
@@ -93,10 +92,10 @@ const ProjectCard = ({
 
 const Works = () => {
   // AUDIO PLAY
-  const [play] = useSound(Mouse_Click);
-
   const Play_click = () => {
-    play();
+    const audio = new Audio(Mouse_Click);
+    audio.volume = 0.35;
+    audio.play();
   };
   return (
     <>
