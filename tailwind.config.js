@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern_transparent": "url('/src/assets/herobg_transparent.png')",
       },
       fontFamily: {
         Delicious: ['Delicious Handrawn', 'cursive'],
