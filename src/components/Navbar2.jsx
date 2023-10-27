@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Sound } from "react";
 import { Link } from "react-router-dom";
+import useSound from 'use-sound';
 import { motion, AnimatePresence } from "framer-motion";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -7,8 +8,60 @@ import { logo, menu, close } from "../assets";
 import dj_orange from "../assets/DJ_orange.jpeg";
 import dj_white from "../assets/DJ_white.png";
 import "../Cursor.css"
+import Inside_you from "../assets/Inside_you.mp3"
+import Mouse_Click from "../assets/Mouse_Click.mp3"
+
+const BoopButton = () => {
+    const [play, { pause }] = useSound(Inside_you);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const PlayAudio = () => {
+        if (isPlaying) {
+            pause();
+        } else {
+            play();
+        }
+        setIsPlaying(!isPlaying);
+    };
+
+
+    return (
+        <div>
+            <button onClick={PlayAudio} className="play-pause-button  hover:text-white nav-cursor invert">
+                {isPlaying ? (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                    </svg>
+                ) : (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                    </svg>
+                )}
+            </button>
+        </div>
+    );
+};
+const Click_Button = () => {
+    const [play, { pause }] = useSound(Mouse_Click);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const Play_click = () => {
+        if (isPlaying) {
+            pause();
+        } else {
+            play();
+        }
+        setIsPlaying(!isPlaying);
+    };
+};
 
 const Navbar2 = () => {
+    // AUDIO PLAY
+    const [play] = useSound(Mouse_Click);
+
+    const Play_click = () => {
+        play();
+    };
     const [toggle, setToggle] = useState(false);
     const [active, setActive] = useState("");
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,6 +76,7 @@ const Navbar2 = () => {
                     onClick={() => {
                         setActive("");
                         window.scrollTo(0, 0);
+                        Play_click();
                     }}
                 >
                     <img src={dj_white} alt="logo" className="w-9 h-9 object-contain" />
@@ -35,10 +89,15 @@ const Navbar2 = () => {
                             className={`${active === Link.title ? "text-white" : "text-secondary"
                                 }
                         hover:text-white text-[18px] font-medium nav-cursor`}
+                            onClick={() => {
+                                setActive(Link.title);
+                                Play_click();
+                            }}
                         >
                             <a className="nav-cursor" href={`#${Link.id}`}>{Link.title}</a>
                         </li>
                     ))}
+                    <BoopButton />
                 </ul>
                 {/* MOBILE NAV */}
                 <ul className="sm:hidden flex flex-1 justify-end items-center transition-all duration-500 ease-in">
@@ -61,11 +120,13 @@ const Navbar2 = () => {
                                     onClick={() => {
                                         setToggle(false); // Close the menu
                                         setActive(link.title);
+                                        Play_click();
                                     }}
                                 >
                                     <a href={`#${link.id}`}>{link.title}</a>
                                 </li>
                             ))}
+                            <BoopButton />
                         </ul>
                     </div>
                 </ul>
