@@ -37,6 +37,8 @@ import tesla from "./company/tesla.png";
 import LingoFlow from "./LingoFlow.png";
 import Chat from "./Chat_app.png";
 import Altium from "./Altium.png";
+import Eye_Icons from "./Eye_Icons.gif";
+import Website_Icons from "./Website_Icons.png";
 
 export {
   logo,
@@ -75,4 +77,6 @@ export {
   LingoFlow,
   Chat,
   Altium,
+  Eye_Icons,
+  Website_Icons,
 };
