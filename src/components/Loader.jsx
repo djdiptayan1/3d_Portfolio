@@ -1,7 +1,14 @@
+import React, { useState } from "react";
 import { Html, useProgress } from "@react-three/drei";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();
+  const [loadingProgress, setLoadingProgress] = useState(progress); // Store progress in state
+  // Update loadingProgress when progress changes
+  if (loadingProgress !== progress) {
+    setLoadingProgress(progress);
+  }
+  //console.log(loadingProgress);
   return (
     <Html
       as='div'
