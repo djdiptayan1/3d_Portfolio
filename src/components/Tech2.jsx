@@ -6,15 +6,23 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { fadeIn, textVariant, zoomIn, slideIn } from "../utils/motion";
 import "../Cursor.css"
+import Hover_Sound from "../assets/Hover_Sound_Effects.mp3"
 
 const TechStack = () => {
+    // AUDIO PLAY
+    const Play_click = () => {
+        const audio = new Audio(Hover_Sound);
+        audio.volume = 0.15;
+        audio.play();
+    };
     return (
         <motion.section
             variants={fadeIn("", "", 0.1, 1)}
             className="py-1"
         >
             <div className="flex flex-row flex-wrap justify-center gap-10">
-                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10"
+                    onMouseOver={Play_click}>
                     {technologies.map((technology) => (
                         <Tilt
                             key={technology.name}
