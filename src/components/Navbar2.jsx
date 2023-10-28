@@ -19,7 +19,7 @@ const BoopButton = () => {
         } else {
             audio.play(); // Play the audio if it's paused
         }
-        setIsPlaying(!isPlaying);
+        setIsPlaying(!isPlaying); // Update the state of our button
     };
     useEffect(() => {
         // Play the audio when the component is mounted (page load)
