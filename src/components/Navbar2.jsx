@@ -21,13 +21,6 @@ const BoopButton = () => {
         }
         setIsPlaying(!isPlaying); // Update the state of our button
     };
-    useEffect(() => {
-        // Play the audio when the component is mounted (page load)
-        audio.volume = 0.2;
-        audio.autoplay = true;
-        audio.play();
-        setIsPlaying(true);
-    }, []); // The empty dependency array ensures this effect runs only once on component mount
 
 
     return (
