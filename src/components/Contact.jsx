@@ -121,7 +121,7 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name, superstar?"
+              placeholder="What's your name ?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Delicious text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -133,7 +133,7 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="How can I reach you, virtually of course?"
+              placeholder="How can I reach you ?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Delicious text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -145,7 +145,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Got a message in a bottle for me? I'm all ears!"
+              placeholder="Got a message in a bottle for me ?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:font-Delicious text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
