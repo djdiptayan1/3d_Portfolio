@@ -28,36 +28,6 @@ const Computers1 = ({ isMobile }) => {
   );
 };
 
-const Computers2 = ({ isMobile }) => {
-  if (isMobile) {
-    // Don't render on mobile
-    return null;
-  }
-  const computer = useGLTF("./Sci-Fi Computer/scene.gltf");
-
-  return (
-    <mesh>
-      <hemisphereLight intensity={3} groundColor="black" />
-      <pointLight intensity={5} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={3}
-        intensity={3}
-        castShadow
-        shadow-mapSize={1024}
-      />
-
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? [1.5, 1.5, 1.5] : [2, 2, 2]}
-        position={isMobile ? [0, -3, 0] : [0, -3.25, 0]}
-        rotation={[0, 0, 0]}
-      />
-    </mesh>
-  );
-};
-
 const Computers3 = ({ isMobile }) => {
   const computer = useGLTF("./retro_floppy/scene.gltf");
 
@@ -111,7 +81,6 @@ const Robot = ({ isMobile }) => {
 };
 const modelComponents = [
   { component: Computers1, cameraPosition: { position: [20, 3, 5], fov: 50 } },
-  { component: Computers2, cameraPosition: { position: [0, 20, 5], fov: 50 } },
   { component: Computers3, cameraPosition: { position: [0, 20, 5], fov: 50 } },
   { component: Robot, cameraPosition: { position: [-1, 20, 5], fov: 50 } }
   // Add more components with their respective camera positions here
@@ -154,11 +123,7 @@ const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        {SelectedComponent === Computers2 && isMobile ? (
-          <Robot isMobile={isMobile} />
-        ) : (
-          <SelectedComponent isMobile={isMobile} />
-        )}
+        <SelectedComponent isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
