@@ -6,7 +6,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import "../Cursor.css";
-import Mouse_Click from "../assets/Mouse_Click.mp3"
+import Mouse_Click from "../assets/Mouse_Click.mp3";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -41,11 +41,14 @@ const About = () => {
     audio.volume = 0.35;
     audio.play();
   };
-  const pdfUrl = './Diptayan_Resume.pdf'; // Replace with the URL of your PDF
+  const pdfUrl = "./Diptayan_Resume.pdf"; // Replace with the URL of your PDF
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`Spiderman font-Delicious ${styles.sectionSubText}`}> Introduction</p>
+        <p className={`Spiderman font-Delicious ${styles.sectionSubText}`}>
+          {" "}
+          Introduction
+        </p>
         <h2 className={`Spiderman ${styles.heroHeadText}`}>Overview</h2>
       </motion.div>
       <motion.p
@@ -66,14 +69,17 @@ const About = () => {
         <span>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <a
-            onClick={() => { window.open(pdfUrl); Play_click() }}
+            onClick={() => {
+              window.open(pdfUrl);
+              Play_click();
+            }}
             target="_blank"
             className="nav-cursor text-blue-400 font-bold hover:text-xl"
           >
             View Resume
           </a>
         </span>
-      </motion.p >
+      </motion.p>
       <div className="Spiderman mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
