@@ -1,10 +1,9 @@
 import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
-import { fadeIn, textVariant, zoomIn, slideIn } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import "../Cursor.css";
 import Hover_Sound from "../assets/Hover_Sound_Effects.mp3";
 

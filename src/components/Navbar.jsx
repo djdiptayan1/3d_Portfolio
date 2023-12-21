@@ -3,8 +3,6 @@ import Homeimg from "../assets/home_icon.svg";
 import applyimg from "../assets/apply_icon.png";
 import aboutimg from "../assets/about_icon.svg";
 import contactimg from "../assets/contact_icon.svg";
-import dj_orange from "../assets/DJ_orange.jpeg";
-import dj_white from "../assets/DJ_white.png";
 
 const InstagramNavbar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768); // Set the threshold width for mobile view

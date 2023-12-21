@@ -6,7 +6,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import "../Cursor.css";
-import { a } from "maath/dist/objectSpread2-284232a6.esm";
 
 const Contact = () => {
   const formref = useRef();
