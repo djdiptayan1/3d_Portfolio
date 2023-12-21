@@ -1,10 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, Navbar2, Tech, Tech2, Works, StarsCanvas, StarsCanvas_bg } from "./components";
-import Loading_Screen from './components/Loading_Screen';
-import './Cursor.css';
+import {
+  About,
+  Contact,
+  Experience,
+  Feedbacks,
+  Hero,
+  Navbar2,
+  Tech,
+  Tech2,
+  Works,
+  StarsCanvas,
+  StarsCanvas_bg,
+} from "./components";
+import Loading_Screen from "./components/Loading_Screen";
+import { useMediaQuery } from "react-responsive";
+import "./Cursor.css";
 const App = () => {
+  const isDesktop = useMediaQuery({ minWidth: 992 });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -33,10 +47,10 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        <StarsCanvas_bg />
+        {isDesktop && <StarsCanvas_bg />}
       </div>
       {/* )} */}
-    </BrowserRouter >
+    </BrowserRouter>
   );
 };
-export default App
+export default App;
