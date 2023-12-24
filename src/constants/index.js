@@ -29,6 +29,7 @@ import {
     LingoFlow,
     Chat,
     Altium,
+    Gemini,
     threejs,
     SETV
 } from "../assets";
@@ -296,6 +297,19 @@ const projects = [
         image: Altium,
         project_demo: "https://altium.djdiptayan.in/",
         source_code_link: "https://github.com/djdiptayan1/Altium_microsite",
+    },
+    {
+        name: "Gemini",
+        description:
+            "The Gemini app, developed in Swift, offers an intuitive interface to engage with the Gemini Pro by Google. This app is designed to facilitate seamless conversations with Gemini LLM, allowing users to input prompts and receive generated responses. It harnesses the power of Google's language generation capabilities to provide engaging and interactive chat experiences.",
+        tags: [
+            {
+                name: "Swift",
+                color: "blue-text-gradient"
+            }
+        ],
+        image: Gemini,
+        source_code_link: "https://github.com/djdiptayan1/Gemini",
     },
 ];
 
