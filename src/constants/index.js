@@ -1,7 +1,5 @@
 import {
     mobile,
-    backend,
-    creator,
     web,
     javascript,
     typescript,
@@ -12,20 +10,16 @@ import {
     python,
     swift,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
     figma,
-    docker,
     java,
     Arduino,
     Photoshop,
     Flask,
     IITM,
-    tesla,
-    shopify,
     LingoFlow,
     Chat,
     Altium,
@@ -230,31 +224,31 @@ const testimonials = [
 ];
 
 const projects = [
-    {
-        name: "LingoFlow",
-        description:
-            "LingoFlow: Your trusted English to Hindi translator, utilizing the strength of a state-of-the-art Seq2Seq model and NLP techniques. This cutting-edge solution has been meticulously crafted with privacy in mind, as showcased in our project for the Smart India Hackathon, where we came 2nd in recognition of our innovation and expertise.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Pytorch",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "FLASK",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: LingoFlow,
-        source_code_link: "https://github.com/djdiptayan1/Smart_India_Hackathon",
-    },
+    // {
+    //     name: "LingoFlow",
+    //     description:
+    //         "LingoFlow: Your trusted English to Hindi translator, utilizing the strength of a state-of-the-art Seq2Seq model and NLP techniques. This cutting-edge solution has been meticulously crafted with privacy in mind, as showcased in our project for the Smart India Hackathon, where we came 2nd in recognition of our innovation and expertise.",
+    //     tags: [
+    //         {
+    //             name: "react",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "Pytorch",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "tailwind",
+    //             color: "pink-text-gradient",
+    //         },
+    //         {
+    //             name: "FLASK",
+    //             color: "blue-text-gradient",
+    //         },
+    //     ],
+    //     image: LingoFlow,
+    //     source_code_link: "https://github.com/djdiptayan1/Smart_India_Hackathon",
+    // },
     {
         name: "Chat Application",
         description:
