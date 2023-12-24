@@ -7,7 +7,9 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import "../Cursor.css";
-import Mouse_Click from "../assets/Mouse_Click.mp3"
+import Mouse_Click from "../assets/Mouse_Click.mp3";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectCard = ({
   index,
@@ -42,11 +44,16 @@ const ProjectCard = ({
         className="bg-tertiary p-1 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <div className={`absolute inset-0 ${project_demo ? 'nav-cursor' : ''} z-10`}
-            onClick={handleImageClick}>
-            <img
+          <div
+            className={`absolute inset-0 ${
+              project_demo ? "nav-cursor" : ""
+            } z-10`}
+            onClick={handleImageClick}
+          >
+            <LazyLoadImage
               src={image}
               alt="project_image"
+              effect="blur"
               className="w-full h-full object-cover rounded-2xl shadow-md"
             />
           </div>
@@ -59,9 +66,10 @@ const ProjectCard = ({
               }}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center nav-cursor z-20"
             >
-              <img
+              <LazyLoadImage
                 src={github}
                 alt="source code"
+                effect="blur"
                 className="nav-cursor w-1/2 h-1/2 object-contain"
               />
             </div>
@@ -70,9 +78,7 @@ const ProjectCard = ({
 
         <div className="mt-5 px-2">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[16px]">
-            {description}
-          </p>
+          <p className="mt-2 text-secondary text-[16px]">{description}</p>
         </div>
 
         <div className=" p-2 mt-4 flex flex-wrap gap-2">
@@ -86,7 +92,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div >
+    </motion.div>
   );
 };
 
