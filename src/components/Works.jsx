@@ -2,12 +2,12 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, Website_Icons } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import "../Cursor.css";
-import Mouse_Click from "../assets/Mouse_Click.mp3";
+import Mouse_Click from "../assets/Mouse_Click.mp3"
 
 const ProjectCard = ({
   index,
@@ -42,12 +42,8 @@ const ProjectCard = ({
         className="bg-tertiary p-1 rounded-2xl sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
-          <div
-            className={`absolute inset-0 ${
-              project_demo ? "nav-cursor" : ""
-            } z-10`}
-            onClick={handleImageClick}
-          >
+          <div className={`absolute inset-0 ${project_demo ? 'nav-cursor' : ''} z-10`}
+            onClick={handleImageClick}>
             <img
               src={image}
               alt="project_image"
@@ -74,7 +70,9 @@ const ProjectCard = ({
 
         <div className="mt-5 px-2">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[16px]">{description}</p>
+          <p className="mt-2 text-secondary text-[16px]">
+            {description}
+          </p>
         </div>
 
         <div className=" p-2 mt-4 flex flex-wrap gap-2">
@@ -88,7 +86,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </motion.div >
   );
 };
 

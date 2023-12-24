@@ -3,6 +3,7 @@ import Homeimg from '../assets/home_icon.svg';
 import applyimg from '../assets/apply_icon.png';
 import aboutimg from '../assets/about_icon.svg';
 import contactimg from '../assets/contact_icon.svg';
+import Robocon_logo from '../assets/Robocon_logo.gif';
 import Hero from './Hero';
 
 const InstagramNavbar = () => {

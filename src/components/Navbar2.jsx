@@ -4,9 +4,9 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { menu, close } from "../assets";
 import dj_white from "../assets/DJ_white.png";
-import "../Cursor.css";
-import Inside_you from "../assets/Inside_you.mp3";
-import Mouse_Click from "../assets/Mouse_Click.mp3";
+import "../Cursor.css"
+import Inside_you from "../assets/Inside_you.mp3"
+import Mouse_Click from "../assets/Mouse_Click.mp3"
 
 const BoopButton = () => {
     const [audio] = useState(new Audio(Inside_you)); // Replace with the actual path to your audio file
@@ -22,28 +22,16 @@ const BoopButton = () => {
         setIsPlaying(!isPlaying); // Update the state of our button
     };
 
+
     return (
         <div>
-            <button
-                onClick={PlayAudio}
-                className="play-pause-button hover:text-white nav-cursor invert"
-            >
+            <button onClick={PlayAudio} className="play-pause-button hover:text-white nav-cursor invert">
                 {isPlaying ? (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
                     </svg>
                 ) : (
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M8 5v14l11-7z" />
                     </svg>
                 )}
@@ -92,9 +80,7 @@ const Navbar2 = () => {
                                 Play_click();
                             }}
                         >
-                            <a className="nav-cursor" href={`#${Link.id}`}>
-                                {Link.title}
-                            </a>
+                            <a className="nav-cursor" href={`#${Link.id}`}>{Link.title}</a>
                         </li>
                     ))}
                     <BoopButton />
@@ -108,10 +94,10 @@ const Navbar2 = () => {
                         onClick={() => setToggle(!toggle)}
                     />
                     <div
-                        className={`bg-primary outline-dashed outline-white bg-opacity-90 ${!toggle ? "hidden" : "flex"
-                            } transition-all duration-500 ease-in p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl glass-effect`}
+                        className={`bg-primary outline-dashed outline-white bg-opacity-90 ${!toggle ? "hidden" : "flex"} transition-all duration-500 ease-in p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl glass-effect`}
                     >
-                        <ul className="list-none flex justify-end items-start flex-col gap-4">
+                        <ul
+                            className="list-none flex justify-end items-start flex-col gap-4">
                             {navLinks.map((link) => (
                                 <li
                                     key={link.id}
@@ -192,6 +178,7 @@ const Navbar2 = () => {
         //         </ul>
         //     </div>
         // </nav >
+
     );
 };
 

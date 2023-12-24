@@ -30,12 +30,13 @@ import Photoshop from "./tech/Photoshop.png";
 import Flask from "./tech/Flask.png";
 
 import SETV from "./company/SETV.webp";
+import shopify from "./company/shopify.png";
 import IITM from "./company/IITM.png";
+import tesla from "./company/tesla.png";
 
 import LingoFlow from "./LingoFlow.png";
 import Chat from "./Chat_app.png";
 import Altium from "./Altium.png";
-import Gemini from "./Gemini_App.png";
 import Eye_Icons from "./Eye_Icons.gif";
 import Website_Icons from "./Website_Icons.png";
 
@@ -70,11 +71,12 @@ export {
   typescript,
   threejs,
   SETV,
+  shopify,
   IITM,
+  tesla,
   LingoFlow,
   Chat,
   Altium,
-  Gemini,
   Eye_Icons,
   Website_Icons,
 };
