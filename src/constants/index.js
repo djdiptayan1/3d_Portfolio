@@ -310,7 +310,7 @@ const projects = [
         ],
         image: Gemini,
         source_code_link: "https://github.com/djdiptayan1/Gemini",
-    },
+    }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
