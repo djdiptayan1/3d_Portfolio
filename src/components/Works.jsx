@@ -50,10 +50,9 @@ const ProjectCard = ({
             } z-10`}
             onClick={handleImageClick}
           >
-            <LazyLoadImage
+            <img
               src={image}
               alt="project_image"
-              effect="blur"
               className="w-full h-full object-cover rounded-2xl shadow-md"
             />
           </div>
@@ -66,10 +65,9 @@ const ProjectCard = ({
               }}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center nav-cursor z-20"
             >
-              <LazyLoadImage
+              <img
                 src={github}
                 alt="source code"
-                effect="blur"
                 className="nav-cursor w-1/2 h-1/2 object-contain"
               />
             </div>
