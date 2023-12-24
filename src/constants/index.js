@@ -254,7 +254,7 @@ const projects = [
     source_code_link: "https://github.com/djdiptayan1/Smart_India_Hackathon",
   },
   {
-    name: "Challer",
+    name: "Chatter",
     description:
       "Elevate your communication experience with my cutting-edge chat application, that connects people worldwide seamlessly. Powered by Java, SQL, and Java Swing, it offers lightning-fast socket connectivity, chat history preservation, and an intuitive user interface, redefining the way we interact in both personal and global conversations.",
     tags: [
