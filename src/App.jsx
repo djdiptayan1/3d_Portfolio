@@ -11,10 +11,10 @@ import {
   StarsCanvas,
   StarsCanvas_bg,
 } from "./components";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 import "./Cursor.css";
 const App = () => {
-  const isDesktop = useMediaQuery({ minWidth: 992 });
+  // const isDesktop = useMediaQuery({ minWidth: 992 });
 
   return (
     <BrowserRouter>
@@ -33,9 +33,8 @@ const App = () => {
           <Contact />
           <StarsCanvas />
         </div>
-        {isDesktop && <StarsCanvas_bg />}
+        <StarsCanvas_bg />
       </div>
-      {/* )} */}
     </BrowserRouter>
   );
 };
