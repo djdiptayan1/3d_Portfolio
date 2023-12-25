@@ -228,31 +228,31 @@ const testimonials = [
 ];
 
 const projects = [
-    {
-        name: "LingoFlow",
-        description:
-            "LingoFlow: Your trusted English to Hindi translator, utilizing the strength of a state-of-the-art Seq2Seq model and NLP techniques. This cutting-edge solution has been meticulously crafted with privacy in mind, as showcased in our project for the Smart India Hackathon, where we came 2nd in recognition of our innovation and expertise.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Pytorch",
-                color: "green-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "FLASK",
-                color: "blue-text-gradient",
-            },
-        ],
-        image: LingoFlow,
-        source_code_link: "https://github.com/djdiptayan1/Smart_India_Hackathon",
-    },
+    // {
+    //     name: "LingoFlow",
+    //     description:
+    //         "LingoFlow: Your trusted English to Hindi translator, utilizing the strength of a state-of-the-art Seq2Seq model and NLP techniques. This cutting-edge solution has been meticulously crafted with privacy in mind, as showcased in our project for the Smart India Hackathon, where we came 2nd in recognition of our innovation and expertise.",
+    //     tags: [
+    //         {
+    //             name: "react",
+    //             color: "blue-text-gradient",
+    //         },
+    //         {
+    //             name: "Pytorch",
+    //             color: "green-text-gradient",
+    //         },
+    //         {
+    //             name: "tailwind",
+    //             color: "pink-text-gradient",
+    //         },
+    //         {
+    //             name: "FLASK",
+    //             color: "blue-text-gradient",
+    //         },
+    //     ],
+    //     image: LingoFlow,
+    //     source_code_link: "https://github.com/djdiptayan1/Smart_India_Hackathon",
+    // },
     {
         name: "Chat Application",
         description:
@@ -308,50 +308,6 @@ const projects = [
         ],
         image: Gemini,
         source_code_link: "https://github.com/djdiptayan1/Gemini",
-    },
-    {
-        name: "Altium Workshop",
-        description:
-            "Utilizing React.js and Firebase, I developed a registration platform for the Altium Workshop. The site offered an intuitive UI, real-time data handling, enhancing their experience. With Firebase's secure authentication and scalable database, this project showcases my ability to create efficient, interactive web applications using modern technologies.",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Tailwindcss",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Firebase",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: Altium,
-        project_demo: "https://altium.djdiptayan.in/",
-        source_code_link: "https://github.com/djdiptayan1/Altium_microsite",
-    },
-    {
-        name: "Altium Workshop",
-        description:
-            "Utilizing React.js and Firebase, I developed a registration platform for the Altium Workshop. The site offered an intuitive UI, real-time data handling, enhancing their experience. With Firebase's secure authentication and scalable database, this project showcases my ability to create efficient, interactive web applications using modern technologies.",
-        tags: [
-            {
-                name: "Reactjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "Tailwindcss",
-                color: "green-text-gradient",
-            },
-            {
-                name: "Firebase",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: Altium,
-        project_demo: "https://altium.djdiptayan.in/",
-        source_code_link: "https://github.com/djdiptayan1/Altium_microsite",
     }
 ];
 
