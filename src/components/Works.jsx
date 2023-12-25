@@ -8,8 +8,6 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import "../Cursor.css";
 import Mouse_Click from "../assets/Mouse_Click.mp3";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ProjectCard = ({
   index,
