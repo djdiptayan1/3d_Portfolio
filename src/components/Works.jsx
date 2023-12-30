@@ -99,25 +99,29 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`StanLee font-Delicious ${styles.sectionSubText} `}>
-          My work
+        <p className={`StanLee font-Delicious ${styles.sectionSubText}`}>
+          {" "}
+          My Works
         </p>
-        <h2 className={`StanLee ${styles.sectionHeadText}`}>Projects.</h2>
+        <h2 className={`StanLee ${styles.heroHeadText}`}>Projects.</h2>
+      </motion.div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
         “Talk is cheap. Show me the code”? I got you. <br />
-        Here are some of my projects you shouldn't misss
+        Here are some of my projects you shouldn't miss out on. <br />
         <span className="text-blue-400">
-          &nbsp;&nbsp;&nbsp;&nbsp;
           <a
             className="nav-cursor font-bold hover:text-xl"
             href="https://github.com/djdiptayan1"
             target="_blank"
             onClick={() => Play_click()}
           >
-            {" "}
             View All Projects...
           </a>
         </span>
-      </motion.div>
+      </motion.p>
 
       <div className="StanLee mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
