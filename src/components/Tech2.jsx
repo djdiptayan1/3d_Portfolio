@@ -8,7 +8,7 @@ import "../Cursor.css";
 
 const TechStack = () => {
   return (
-    <motion.section variants={fadeIn("", "", 0.1, 1)} className="py-1">
+    <div className="py-1">
       <div className="flex flex-row flex-wrap justify-center gap-10">
         <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-10">
           {technologies.map((technology) => (
@@ -35,7 +35,7 @@ const TechStack = () => {
           ))}
         </div>
       </div>
-    </motion.section>
+    </div>
   );
 };
 
