@@ -1,6 +1,7 @@
 import {
   mobile,
   web,
+  embedded,
   javascript,
   typescript,
   html,
@@ -20,6 +21,9 @@ import {
   Photoshop,
   Flask,
   IITM,
+  samsung,
+  prism,
+  sony,
   LingoFlow,
   Chat,
   Altium,
@@ -56,10 +60,10 @@ const services = [
     title: "Java Developer",
     icon: mobile,
   },
-  // {
-  //     title: "Backend Developer",
-  //     icon: backend,
-  // },
+  {
+    title: "Embedded Developer",
+    icon: embedded,
+  },
   // {
   //     title: "Content Creator",
   //     icon: creator,
@@ -147,8 +151,22 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Samsung Prism Intern",
+    company_name: "Samsung R&D Institute, Bangaluru",
+    mode: "remote",
+    icon: samsung,
+    iconBg: "#E6DEDD",
+    date: "Nov 2023 - Present",
+    points: [
+      "Image Duplication Evaluation: Evaluated various methods, including Hash algorithms",
+      "Customized Filtering Script Development: Developed a precise script for accurate image duplication filtering.",
+      "Open Source Script Classification: Categorized scripts based on effectiveness.",
+    ],
+  },
+  {
     title: "Research Intern",
     company_name: "Indian Institute of Technology Madras",
+    mode: "on-site",
     icon: IITM,
     iconBg: "#383E56",
     date: "June 2023 - July 2023",
@@ -160,34 +178,22 @@ const experiences = [
     ],
   },
   // {
-  //     title: "Samsung Prism Intern",
-  //     company_name: "Samsung R&D Institute",
-  //     icon: IITM,
-  //     iconBg: "#E6DEDD",
-  //     date: "Nov 2023 - Present",
-  //     points: [
-  //         "Developing and maintaining web applications using React.js and other related technologies.",
-  //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //         "Implementing responsive design and ensuring cross-browser compatibility.",
-  //         "Participating in code reviews and providing constructive feedback to other developers.",
-  //     ],
-  // },
-  // {
-  //     title: "Web Developer,
-  //     company_name: "Shopify",
-  //     icon: shopify,
-  //     iconBg: "#383E56",
-  //     date: "Jan 2022 - Jan 2023",
-  //     points: [
-  //         "Developing and maintaining web applications using React.js and other related technologies.",
-  //         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //         "Implementing responsive design and ensuring cross-browser compatibility.",
-  //         "Participating in code reviews and providing constructive feedback to other developers.",
-  //     ],
+  //   title: "Web Developer",
+  //   company_name: "Shopify",
+  //   icon: sony,
+  //   iconBg: "#383E56",
+  //   date: "Jan 2022 - Jan 2023",
+  //   points: [
+  //     "Developing and maintaining web applications using React.js and other related technologies.",
+  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+  //     "Implementing responsive design and ensuring cross-browser compatibility.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //   ],
   // },
   {
     title: "Full stack Developer",
-    company_name: "SETV",
+    company_name: "SETV, Bangalore",
+    mode: "remote",
     icon: SETV,
     iconBg: "#383E56",
     date: "June 2023 - July 2023",
